@@ -45,7 +45,7 @@ Ext.generator.Base = Ext.extend(Object, {
      * @param {String} destination The destination path (defaults to the fileName)
      */
     template: function(fileName, data, destination) {
-        Logger.log("    Creating file: " + (fileName || destination));
+        Logger.log("    Creating file: " + (destination || fileName));
         
         // dirty hack to let <tpl> get through without being picked up
         Ext.apply(data, {
