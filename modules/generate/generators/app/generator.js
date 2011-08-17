@@ -58,10 +58,10 @@ Ext.generator.Application = Ext.extend(Ext.generator.Base, {
     createDirectoryStructure: function() {
         Logger.log("Creating directories...");
         this.mkdir(
-            'app', 'app/models', 'app/controllers', 'app/views', 'lib', 
+            'app', 'app/models', 'app/stores', 'app/controllers', 'app/views', 'lib', 
             'resources', 'resources/images', 'resources/css', 'resources/scss',
             'test', 'test/acceptance', 'test/fixtures', 'test/unit',
-            'test/unit/models', 'test/unit/controllers', 'test/unit/views'
+            'test/unit/models', 'test/unit/stores', 'test/unit/controllers', 'test/unit/views'
         );
     },
     
