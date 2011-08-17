@@ -21,6 +21,13 @@ To generate a model:
 This creates a model called "User" with the given fields. It also creates an empty Jasmine spec
 file for the model, and inserts script tags for the new files into the appropriate index.html file.
 
+### Stores
+To generate a store:
+   
+    ./sencha generate store User
+
+This creates a store called "User" based on the model "User".
+
 ### Controllers
 
 To generate a controller:
