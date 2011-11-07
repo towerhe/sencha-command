@@ -1,8 +1,8 @@
-describe("A {name}", function() {
-    var {name} = Ext.ModelMgr.getModel("{name}"),
-        instance;
-    
-    beforeEach(function() {
-        instance = new {name}({});
-    });
+describe("app.models.{name}", function() {
+  var {name} = Ext.ModelMgr.getModel("app.models.{name}"),
+      instance;
+
+  beforeEach(function() {
+    instance = new {name}({});
+  });
 });

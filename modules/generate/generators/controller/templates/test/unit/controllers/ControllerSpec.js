@@ -1,10 +1,10 @@
-describe("The {name} controller", function() {
-    var controller = Ext.ControllerManager.get("{name}");
+describe("app.controllers.{name}Controller", function() {
+  var controller = Ext.ControllerManager.get("app.controllers.{name}Controller");
 <tpl for="actions">
-    describe("the {.} action", function() {
-        beforeEach(function() {
+  describe(".{.}", function() {
+    beforeEach(function() {
             
-        });
-    });\n
+    });
+  });\n
 </tpl>
 });

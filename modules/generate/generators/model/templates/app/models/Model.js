@@ -1,11 +1,11 @@
 /**
- * @class {name}
+ * @class app.models.{name}
  * @extends Ext.data.Model
- * The {name} model
+ * The app.models.{name} model
  */
-Ext.regModel("{name}", {
-    fields: [
+Ext.regModel("app.models.{name}", {
+  fields: [
 <tpl for="fields">
-        \{name: "{name}", type: "{type}"\}{[xindex != xcount ? "," : ""]}</tpl>
-    ]
+    \{name: "{name}", type: "{type}"\}{[xindex != xcount ? "," : ""]}</tpl>
+  ]
 });

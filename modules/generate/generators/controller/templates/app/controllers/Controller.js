@@ -3,9 +3,9 @@
  * @extends Ext.Controller
  * The {name} controller
  */
-Ext.regController("{name}", {
+Ext.regController("app.controllers.{name}", {
 <tpl for="actions">
-    {.}: function() {
-        
-    }{[xindex != xcount ? ",\n\n" : ""]}</tpl>   
+  {.}: function() {
+      
+  }{[xindex != xcount ? ",\n\n" : ""]}</tpl>   
 });

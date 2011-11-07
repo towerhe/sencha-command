@@ -6,8 +6,8 @@
 Ext.generator.Controller = Ext.extend(Ext.generator.Base, {
 
     generate: function() {
-        var controllerFile     = 'app/controllers/' + this.name + '.js',
-            controllerSpecFile = 'test/unit/controllers/' + this.name + '.js';
+        var controllerFile     = 'app/controllers/' + this.name + 'Controller.js',
+            controllerSpecFile = 'test/unit/controllers/' + this.name + 'ControllerSpec.js';
         
         this.headline("Generating the " + this.name + " controller");
         
@@ -16,7 +16,7 @@ Ext.generator.Controller = Ext.extend(Ext.generator.Base, {
         
         this.insertInclude(controllerFile, 'sencha-controllers');
         this.insertInclude('../../' + controllerFile,          'app-controllers',  'test/unit/index.html');
-        this.insertInclude('controllers/' + this.name + '.js', 'spec-controllers', 'test/unit/index.html');
+        this.insertInclude('controllers/' + this.name + 'ControllerSpec.js', 'spec-controllers', 'test/unit/index.html');
     },
     
     decodeArgs: function(args) {

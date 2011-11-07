@@ -1,8 +1,8 @@
 /**
- * @class {name}
+ * @class app.stores.{name}Store
  * @extends Ext.Store
- * The {name} store
+ * The app.stores.{name}Store store
  */
-Ext.regStore("{name}", {
+Ext.regStore("app.stores.{name}Store", {
     model: "{name}"
 });

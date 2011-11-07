@@ -7,7 +7,7 @@ Ext.generator.Model = Ext.extend(Ext.generator.Base, {
 
     generate: function() {
         var modelFile   = 'app/models/' + this.name + '.js',
-            specFile    = 'test/unit/models/' + this.name + '.js',
+            specFile    = 'test/unit/models/' + this.name + 'Spec.js',
             fixtureFile = 'test/fixtures/' + this.name + '.js';
         
         this.headline("Generating the " + this.name + " model");
@@ -18,7 +18,7 @@ Ext.generator.Model = Ext.extend(Ext.generator.Base, {
         this.insertInclude(modelFile, 'sencha-models');
         
         this.insertInclude('../../' + modelFile,               'app-models',  'test/unit/index.html');
-        this.insertInclude('models/' + this.name + '.js',      'spec-models', 'test/unit/index.html');
+        this.insertInclude('models/' + this.name + 'Spec.js',      'spec-models', 'test/unit/index.html');
         this.insertInclude('../fixtures/' + this.name + '.js', 'fixtures',    'test/unit/index.html');
     },
     

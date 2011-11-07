@@ -7,7 +7,7 @@ Ext.generator.Store = Ext.extend(Ext.generator.Base, {
     generate: function() {
         this.headline("Generating the " + this.name + " store");
         
-        var storeFile = "app/stores/" + this.name + '.js';
+        var storeFile = "app/stores/" + this.name + 'Store.js';
         
         this.template("app/stores/Store.js", this, storeFile);
         this.insertInclude(storeFile, 'sencha-stores');
