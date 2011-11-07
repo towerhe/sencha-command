@@ -9,7 +9,7 @@ Ext.generator.Store = Ext.extend(Ext.generator.Base, {
         
         var storeFile = "app/stores/" + this.name + '.js';
         
-        this.template("Store", this, storeFile);
+        this.template("app/stores/Store.js", this, storeFile);
         this.insertInclude(storeFile, 'sencha-stores');
     },
     
@@ -19,5 +19,3 @@ Ext.generator.Store = Ext.extend(Ext.generator.Base, {
 });
 
 Ext.regGenerator('store', Ext.generator.Store);
-
-Loader.load('templates/Store');
